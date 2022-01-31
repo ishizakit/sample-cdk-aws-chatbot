@@ -10,3 +10,10 @@ new SampleCdkAwsChatbotStack(app, "SampleCdkAwsChatbotStack", {
     region: process.env.CDK_DEFAULT_REGION,
   },
 });
+
+new SampleCdkApiDestinationStack(app, "SampleCdkApiDestinationStack", {
+  env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CDK_DEFAULT_REGION,
+  },
+});
